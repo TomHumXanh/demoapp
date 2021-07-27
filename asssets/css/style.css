@@ -47,6 +47,9 @@ html{
     margin-top: 16px;
 
 }
+.mt-32 {
+    margin-top: 32px;
+}
 .btn {
     color: #fff;
     background-color: black;
@@ -54,13 +57,8 @@ html{
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
-    border: none;
-    
+    border: none;  
 }
-#main {
-
-}
-
 #header {
     position: fixed;
     top: 0;
@@ -69,6 +67,7 @@ html{
     height: 46px;
     background-color: black;
     z-index: 1;
+    
     /* z-index giữ cho header lên trên slider */
 
 }
@@ -133,16 +132,33 @@ html{
 #nav .nav-arrow {
     font-size: 14px;
 }
+#header .mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+#header .mobile-menu,
 #header .search-bt {
     float: right;
     padding: 0 21px;
     cursor: pointer;   
 /* "cursor" thay đổi thuộc tính con trỏ chuột */
 }
+
 #header .search-bt:hover {
+    cursor: pointer;
     background-color: #f44336;
 }
+#header .mobile-menu:hover {
+    background-color: #ccc;
 
+}
+#header .mobile-menu:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .srcicon {
     color: #fff;
     font-size: 24px;
@@ -152,7 +168,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/asssets/img/slider/slider1.jpg') top center / cover no-repeat ;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat ;
 /* vị trí> kích thước>thuộc tính */
 }
 #slider .text-content {
@@ -179,15 +195,15 @@ html{
 
 }
 
-#content {
-   
 
-}
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading {
     text-align: center;
@@ -211,7 +227,7 @@ html{
     line-height: 1.4;
 }
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
     overflow: hidden;
 }
 
@@ -262,7 +278,7 @@ html{
 }
 
 .placelist {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
